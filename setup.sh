@@ -31,6 +31,14 @@ if [ $BACKUP = "YES" ]; then
 fi
 
 ### Common
+# git
+if [ $BACKUP = "YES" ]; then
+	if [ -e ~/.gitignore ]; then
+		mv ~/.gitignore $BACKUPDIR
+	fi
+fi
+cp common/gitignore ~/.gitignore
+
 # irssi
 if [ $BACKUP = "YES" ]; then
 	if [ -e ~/.irssi ]; then

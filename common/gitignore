@@ -1,0 +1,10 @@
+*.o
+*.so
+*.lo
+*.la
+.*~
+*~
+.DS_Store
+*.pbxuser
+.*.swp
+.svn
