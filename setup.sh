@@ -45,6 +45,9 @@ if [ $BACKUP = "YES" ]; then
 		fi
 	fi
 fi
+if [ ! -d ~/.irssi ]; then
+	mkdir ~/.irssi
+fi
 cp common/irssi/config ~/.irssi/config
 
 # mutt
@@ -72,6 +75,9 @@ if [ $BACKUP = "YES" ]; then
 		fi
 	fi
 fi
+if [ ! -d ~/.ssh ]; then
+	mkdir ~/.ssh
+fi
 cp common/ssh/authorized_keys2 ~/.ssh/authorized_keys2
 cp common/ssh/config ~/.ssh/config
 
@@ -88,6 +94,9 @@ if [ $BACKUP = "YES" ]; then
 			fi
 		fi
 	fi
+fi
+if [ ! -d ~/.subversion ]; then
+	mkdir ~/.subversion
 fi
 cp common/subversion/config ~/.subversion/config
 
