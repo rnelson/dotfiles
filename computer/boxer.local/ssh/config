@@ -1,0 +1,28 @@
+
+# Backlight Software
+#Host cookudos
+#	HostName		carvey.backlightsw.com
+#	User			ross
+#Host airlife
+#	HostName		carlin.backlightsw.com
+#	User				ross
+
+# Access Press
+Host apress
+	HostName		www.accesspress.org
+#Host apress
+#	HostName		riddler.dreamhost.com
+#	User			rnelson0
+
+# Amazon EC2 hosts
+#Host tartarusamz
+#	HostName		ec2-50-16-4-16.compute-1.amazonaws.com
+#	IdentityFile	/Users/rnelson/.ssh/ec2-rnelson.pem
+#	User			ec2-user
+#Host tartarushighcpuamz
+#	HostName		ec2-50-16-18-117.compute-1.amazonaws.com
+#	IdentityFile	/Users/rnelson/.ssh/ec2-chrism.pem
+#	User			ubuntu
+#Host tartarusrsc
+#	HostName		173.203.218.159
+#	User			root

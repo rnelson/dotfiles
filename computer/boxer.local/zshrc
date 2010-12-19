@@ -1,0 +1,29 @@
+
+# Maple
+export PATH=/Library/Frameworks/Maple.framework/Versions/Current/bin:$PATH
+
+# Various development tools
+export PATH=/opt/javacc/bin:$PATH
+export PATH=/opt/intel/cc/10.1.017/bin:$PATH
+export PATH=/opt/intel/fc/10.1.017/bin:$PATH
+export PATH=/opt/intel/idbe/10.1.017/bin:$PATH
+export PATH=/opt/checker-232/bin:/opt/checker-232:$PATH
+export PATH=/usr/local/llvm-gcc4.2-2.5-x86-darwin9/bin:$PATH
+export MANPATH=/usr/man:/usr/local/llvm-gcc4.2-2.5-x86-darwin9/man:$MANPATH
+alias canalyze='scan-build xcodebuild -configuration Debug -sdk iphonesimulator3.1.2'
+
+# Various installed software
+export PATH=/opt/schily/bin:$PATH
+export PATH=/usr/local/mysql/bin/:$PATH
+export PATH=/opt/python/bin:$PATH
+
+# icc and ifort give me a warning if I don't -m64
+alias icc="/opt/intel/cc/10.1.017/bin/icc -m64"
+alias ifort="/opt/intel/fc/10.1.017/bin/ifort -m64"
+
+# Honestly, I don't know why I put mutt on here
+export PATH=/opt/mutt/bin:$PATH
+
+# Stuff for my research
+alias wittyvnc="ssh -N csewitty -L 5904/localhost/5904"
+alias redoiso="rm memory.iso; mkisofs -no-desktop -allow-lowercase -allow-multidot -N -v -d -o /tmp/memory.iso . && mv /tmp/memory.iso ."

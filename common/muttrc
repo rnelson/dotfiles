@@ -1,0 +1,12 @@
+# Show mutt version on startup
+push <show-version>
+
+# Don't ask to move read messages to mbox
+set move=no
+
+# Beep on new mail
+set beep_new=yes
+
+# Set the outgoing name
+set realname="Ross Nelson"
+set edit_headers

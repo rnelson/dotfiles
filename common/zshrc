@@ -1,0 +1,36 @@
+# Set up some magic OS X voodoo for opening stuff under /Applications
+if [ "`uname`" = "Darwin" ]; then
+	compctl -f -x 'p[2]' -s "`/bin/ls -d1 /Applications/*/*.app /Applications/*.app | sed 's|^.*/\([^/]*\)\.app.*|\\1|;s/ /\\\\ /g'`" -- open
+	alias run='open -a'
+fi
+
+# Use vim as the default editor
+export EDITOR=vim
+
+# Have ls give us an idea of what the entries are (e.g., directory, executable)
+alias ls="/bin/ls -F"
+
+# ZSH configuration
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt appendhistory autocd beep extendedglob nomatch notify
+bindkey -v
+
+# Set a good default PATH
+export PATH=.:/bin:/usr/bin:/usr/local/bin:/sbin:/usr/sbin:/usr/local/sbin
+
+# DOS emulation
+#export PS1='C:${PWD//\//\\\}>'
+alias dir='ls -1'
+
+# I have a habit of making a typo on "exit", often from closing SSH sessions
+alias xit="exit"
+alias exi="exit"
+
+# Some handy aliases for working with the filesystem
+alias lshidden="ls -A | grep '^\.'"
+alias ds="find -maxdepth 1 -type d -path '.\/*' -exec du -sh {} \;"
+alias sds="sudo find -maxdepth 1 -type d -path '.\/*' -exec du -sh {} \;"
+alias dsg="find -maxdepth 1 -type d -path '.\/*' -exec du -sh {} \; | grep "
+alias sdsg="sudo find -maxdepth 1 -type d -path '.\/*' -exec du -sh {} \; | grep "
