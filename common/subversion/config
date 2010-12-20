@@ -10,7 +10,7 @@ editor-cmd = vim
 # rsh = rsh -l rnelson
 
 [miscellany]
-global-ignores = *.o *.lo *.la #*# .*.rej *.rej .*~ *~ .#* .DS_Store build *~.nib *.so *.pbxuser *.mode* *.perspective*
+global-ignores = *.o *.lo *.la #*# .*.rej *.rej .*~ *~ .#* .DS_Store build *~.nib *.so *.pbxuser *.mode* *.perspective* .*.swp .git
 log-encoding = utf8
 use-commit-times = yes
 enable-auto-props = yes
