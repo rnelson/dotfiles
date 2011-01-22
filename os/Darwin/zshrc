@@ -12,5 +12,9 @@ export PATH=/Developer/usr/bin:/Developer/usr/sbin:$PATH
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
 
+# And Homebrew
+export PATH=/usr/local/homebrew/bin
+
 # Put the pkg install of Mono after MacPorts
 export PATH=/Library/Frameworks/Mono.framework/Home/bin:$PATH
+export MANPATH=/Library/Frameworks/Mono.framework/Home/man:$MANPATH
