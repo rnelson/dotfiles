@@ -27,3 +27,7 @@ export PATH=/opt/mutt/bin:$PATH
 # Stuff for my research
 alias wittyvnc="ssh -N csewitty -L 5904/localhost/5904"
 alias redoiso="rm memory.iso; mkisofs -no-desktop -allow-lowercase -allow-multidot -N -v -d -o /tmp/memory.iso . && mv /tmp/memory.iso ."
+
+# NaturalDocs to document source code
+alias ndoccmd="/opt/ndocs/NaturalDocs -i . -o HTML doc -p .proj -do -ro"
+alias ndoc="[ -d doc ] && ndoccmd || mkdir doc && ndoccmd"
