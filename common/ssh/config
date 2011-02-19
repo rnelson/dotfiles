@@ -16,6 +16,9 @@ Host elysium
 Host tartarus
 	HostName		tartarus.bluewormlabs.com
 
+Host styx
+	HostName		styx.bluewormlabs.com
+
 Host home
 	HostName		rnelsonhome.no-ip.org
 
