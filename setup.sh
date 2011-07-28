@@ -150,6 +150,17 @@ if [ "`hostname`" = "iceland" ]; then
 	fi
 fi
 ## End iceland
+## clover
+if [ "`hostname`" = "clover" ]; then
+	# Bash configuration
+	if [ -e ~/.bashrc ]; then
+		if [ $BACKUP = "YES" ]; then
+			mv ~/.bashrc $BACKUPDIR/bashrc
+		fi
+		cp computer/clover/bashrc ~/.bashrc
+	fi
+fi
+## End clover
 ### End computers
 
 
