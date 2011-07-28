@@ -31,3 +31,9 @@ alias redoiso="rm memory.iso; mkisofs -no-desktop -allow-lowercase -allow-multid
 # NaturalDocs to document source code
 alias ndoccmd="/opt/ndocs/NaturalDocs -i . -o HTML doc -p .proj -do -ro"
 alias ndoc="[ -d doc ] && ndoccmd || mkdir doc && ndoccmd"
+
+# Jikes
+export PATH=/opt/jikes/jikesrvm-3.1.1-development_x86_64-linux/:$PATH
+
+# MacTeX
+export PATH=/usr/local/texlive/2010/bin/x86_64-darwin/:$PATH
