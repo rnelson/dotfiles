@@ -107,4 +107,5 @@ export J9=/opt/java/j9/ibm-java-x86_64-60
 export RVM=/opt/java/jikes/jikesrvm-3.1.1-development_x86_64-linux
 export OJDK6=/usr/lib/jvm/java-6-openjdk
 #export OJDK7=/usr/lib/jvm/java-7-openjdk
-export HS7=/usr/lib/jvm/java-1.7.0-hotspot
+export HS6=/usr/lib/jvm/java-6-sun
+export HS7=/usr/lib/jvm/java-7-sun
