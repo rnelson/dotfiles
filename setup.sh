@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # dotfiles v0.0.1
-# Public domain (or license of your choosing)
+# Public domain
 # Ross Nelson, 2010.12.19
 
 # For now, this is just going to require manual
