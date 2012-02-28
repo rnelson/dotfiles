@@ -1,0 +1,34 @@
+" .vimrc
+" Heavily based on http://www.jonlee.ca/hacking-vim-the-ultimate-vimrc/
+" Ross Nelson <ross.nelson_gmail_com@localhost>
+
+" \c: run the current buffer through wc
+map <silent> <leader>c :%w !wc<CR>
+
+" \s: run the current file through aspell
+map <silent> <leader>s :!aspell check %<CR>
+
+" Turn on line numbering
+set number
+
+" Turn on syntax highlighting
+set t_Co=256
+colorscheme zenburn
+syntax enable
+
+" Code folding
+set foldenable
+set fdm=indent
+nnoremap <space> za
+
+" Turn word wrapping off
+set wrap!
+
+" Muck with intdentation
+set smartindent
+set tabstop=4
+set shiftwidth=4
+filetype indent on
+
+" Highlight the current line (vim >= 7)
+set cursorline

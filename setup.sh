@@ -116,6 +116,16 @@ if [ $BACKUP = "YES" ]; then
 	fi
 fi
 cp common/zshrc ~/.zshrc
+
+# vim
+if [ $BACKUP = "YES" ]; then
+	if [ -e ~/.vimrc ]; then
+		mv ~/.vimrc $BACKUPDIR/vimrc
+	fi
+fi
+cp common/vimrc ~/.vimrc
+mkdir -p ~/.vim/colors
+cp common/vim/colors/* ~/.vim/colors
 ### End common
 
 
