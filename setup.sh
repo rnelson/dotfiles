@@ -14,8 +14,8 @@
 
 
 # ====== START OF CONFIGURATION ======
-DOTFILESDIR="/Users/rnelson/.dotfiles/" # Directory to use for whatever is needed (e.g., backups)
-#DOTFILESDIR="/home/rnelson/.dotfiles/" # Directory to use for whatever is needed (e.g., backups)
+#DOTFILESDIR="/Users/rnelson/.dotfiles/" # Directory to use for whatever is needed (e.g., backups)
+DOTFILESDIR="/home/rnelson/.dotfiles/" # Directory to use for whatever is needed (e.g., backups)
 BACKUP="YES"                            # Create a backup of files/directories that are replaced
 # ======= END OF CONFIGURATION =======
 
