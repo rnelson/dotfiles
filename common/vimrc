@@ -17,9 +17,10 @@ colorscheme zenburn
 syntax enable
 
 " Code folding
-set foldenable
+set nofoldenable
 set fdm=indent
 nnoremap <space> za
+noremap <F10> :set foldenable!<CR>
 
 " Turn word wrapping off
 set wrap!
