@@ -1,0 +1,2 @@
+common/vim/autoload/pathogen.vim
+common/vim/bundle/vim-fugitive
