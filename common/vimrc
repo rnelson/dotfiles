@@ -1,12 +1,19 @@
 " .vimrc
 " Heavily based on http://www.jonlee.ca/hacking-vim-the-ultimate-vimrc/
-" Ross Nelson <ross.nelson%gmail.com@localhost>
+" Ross Nelson <ross.nelson_gmail_com@localhost>
+
+" Install the following:
+"   - pathogen: https://github.com/tpope/vim-pathogen#readme
+"   - fugitive: https://github.com/tpope/vim-fugitive#readme
 
 " \c: run the current buffer through wc
 map <silent> <leader>c :%w !wc<CR>
 
 " \s: run the current file through aspell
 map <silent> <leader>s :!aspell check %<CR>
+
+" Enable pathogen
+call pathogen#infect()
 
 " Turn on line numbering
 set number
@@ -17,10 +24,9 @@ colorscheme zenburn
 syntax enable
 
 " Code folding
-set nofoldenable
+set foldenable
 set fdm=indent
 nnoremap <space> za
-noremap <F10> :set foldenable!<CR>
 
 " Turn word wrapping off
 set wrap!
