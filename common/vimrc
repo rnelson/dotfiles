@@ -32,9 +32,10 @@ colorscheme zenburn
 syntax enable
 
 " Code folding
-set foldenable
+set nofoldenable
 set fdm=indent
 nnoremap <space> za
+map <silent> <F10> :set foldenable!<CR>
 
 " Turn word wrapping off
 set wrap!
@@ -48,7 +49,7 @@ filetype indent on
 " Show whitespace characters; toggle with F11
 set listchars=eol:$,tab:>-,trail:.,extends:>,precedes:<,nbsp:_
 highlight SpecialKey term=standout ctermfg=darkgray guifg=darkgray
-noremap <F11> :set list!<CR>
+map <silent> <F11> :set list!<CR>
 
 " Highlight the current line (vim >= 7)
 set cursorline
