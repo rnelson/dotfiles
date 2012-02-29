@@ -5,6 +5,7 @@
 " Install the following:
 "   - pathogen: https://github.com/tpope/vim-pathogen#readme
 "   - fugitive: https://github.com/tpope/vim-fugitive#readme
+"   - NERDtree: http://www.vim.org/scripts/script.php?script_id=1658
 
 " \c: run the current buffer through wc
 map <silent> <leader>c :%w !wc<CR>
@@ -12,8 +13,15 @@ map <silent> <leader>c :%w !wc<CR>
 " \s: run the current file through aspell
 map <silent> <leader>s :!aspell check %<CR>
 
+" Use F7 to switch between buffers
+map <silent> <F7> :buffers<CR>:buffer<Space>
+
 " Enable pathogen
 call pathogen#infect()
+
+" Set F8 and F9 as NERD tree commands
+map <silent> <F8> :NERDTreeToggle<CR>
+map <silent> <F9> :NERDTreeFind<CR>
 
 " Turn on line numbering
 set number
