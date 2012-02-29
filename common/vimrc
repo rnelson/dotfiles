@@ -1,6 +1,6 @@
 " .vimrc
 " Heavily based on http://www.jonlee.ca/hacking-vim-the-ultimate-vimrc/
-" Ross Nelson <ross.nelson_gmail_com@localhost>
+" Ross Nelson <ross.nelson%gmail_com@localhost>
 
 " Install the following:
 "   - pathogen: https://github.com/tpope/vim-pathogen#readme
