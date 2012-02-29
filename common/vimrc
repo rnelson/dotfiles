@@ -1,6 +1,6 @@
 " .vimrc
 " Heavily based on http://www.jonlee.ca/hacking-vim-the-ultimate-vimrc/
-" Ross Nelson <ross.nelson_gmail_com@localhost>
+" Ross Nelson <ross.nelson%gmail.com@localhost>
 
 " \c: run the current buffer through wc
 map <silent> <leader>c :%w !wc<CR>
