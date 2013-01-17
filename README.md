@@ -21,7 +21,7 @@ Installation
 
 There is a small configuration section in the setup script that 
 needs to match the user's environment. Eventually, I'll rewrite 
-the script (probably in Python) and improve that.
+the script and improve that.
 
 Structure
 ---------
