@@ -9,6 +9,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'git://git.wincent.com/command-t.git'
+Plugin 'altercation/vim-colors-solarized'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -32,10 +33,12 @@ map <silent> <F7> :buffers<CR>:buffer<Space>
 set number
 
 " Turn on syntax highlighting
+let g:solarized_termcolors=256
 set t_Co=256
-colorscheme zenburn
 syntax enable
 syntax on
+set background=dark
+colorscheme solarized
 
 " Code folding
 set nofoldenable
