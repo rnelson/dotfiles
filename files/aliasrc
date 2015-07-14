@@ -1,0 +1,24 @@
+# DOS emulation
+alias dir='ls -1'
+
+# I have a habit of making a typo on "exit", often from closing SSH sessions
+alias xit="exit"
+alias exi="exit"
+
+# Some handy aliases
+alias lshidden="ls -A | grep '^\.'"
+alias ls="/bin/ls -F"
+alias grep='grep --color=auto'
+alias ta='tmux attach'
+alias tls='tmux ls'
+alias tat='tmux attach -t'
+alias tns='tmux new-session -s'
+
+# OS X-specific things
+if [[ "`uname`" = "Darwin" ]]; then
+	alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
+	
+	# Set up some magic OS X voodoo for opening stuff under /Applications
+	compctl -f -x 'p[2]' -s "`/bin/ls -d1 /Applications/*/*.app /Applications/*.app | sed 's|^.*/\([^/]*\)\.app.*|\\1|;s/ /\\\\ /g'`" -- open
+	alias run='open -a'
+fi

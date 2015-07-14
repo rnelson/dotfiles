@@ -1,0 +1,27 @@
+# Files from compilation
+*.o
+*.so
+*.lo
+*.la
+
+# Temporary files
+.*~
+*~
+.*.swp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+._*
+.AppleDouble
+.LSOverride
+
+# Xcode
+*.pbxuser
+
+# VCS
+.svn
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
