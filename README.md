@@ -7,6 +7,7 @@ All the cool kids do it, right?
 Installation
 ------------
 ### Requirements
++ Bash (`setup.sh`)
 + Git (checkout/updating)
 
 ### Install
