@@ -4,18 +4,27 @@
 mkdir -p ~/.vim/bundle
 mkdir -p ~/.vim/colors
 
-# Install Vundle
-mkdir -p ~/.vim/bundle
+## Install Vundle
 if [[ ! -d ~/.vim/bundle/Vundle.vim ]]; then
     git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
-if [[ ! -d ~/.vim/bundle/vim-colors-solarized ]]; then
-    git clone git://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized
-fi
 
 # Copy config files
-cp -R files/vim/colors/* ~/.vim/colors
 cp files/vimrc ~/.vimrc
 cp files/zshrc ~/.zshrc
 cp files/aliasrc ~/.aliasrc
 cp files/tmux.conf ~/.tmux.conf
+
+# Install vim plugins; do this before copying .vimrc
+# or else the 
+vim +PluginInstall +qall
+
+# Set up the vim color scheme
+echo '' >> ~/.vimrc
+echo '" Turn on syntax highlighting' >> ~/.vimrc
+echo 'let g:solarized_termcolors=256' >> ~/.vimrc
+echo 'set t_Co=256' >> ~/.vimrc
+echo 'syntax enable' >> ~/.vimrc
+echo 'syntax on' >> ~/.vimrc
+echo 'set background=dark' >> ~/.vimrc
+echo 'colorscheme solarized' >> ~/.vimrc

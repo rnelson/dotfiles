@@ -32,14 +32,6 @@ map <silent> <F7> :buffers<CR>:buffer<Space>
 " Turn on line numbering
 set number
 
-" Turn on syntax highlighting
-let g:solarized_termcolors=256
-set t_Co=256
-syntax enable
-syntax on
-set background=dark
-colorscheme solarized
-
 " Code folding
 set nofoldenable
 set fdm=indent
