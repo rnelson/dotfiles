@@ -4,7 +4,7 @@
 mkdir -p ~/.vim/bundle
 mkdir -p ~/.vim/colors
 
-## Install Vundle
+# Install Vundle
 if [[ ! -d ~/.vim/bundle/Vundle.vim ]]; then
     git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
@@ -16,7 +16,7 @@ cp files/aliasrc ~/.aliasrc
 cp files/tmux.conf ~/.tmux.conf
 
 # Install vim plugins; do this before copying .vimrc
-# or else the 
+# or else the  color scheme causes issues
 vim +PluginInstall +qall
 
 # Set up the vim color scheme
