@@ -19,6 +19,9 @@ cp files/tmux.conf ~/.tmux.conf
 # or else the  color scheme causes issues
 vim +PluginInstall +qall
 
+# This may require a Ruby devel package
+(cd ~/.vim/bundle/command-t/ruby/command-t && ruby extconf.rb && make)
+
 # Set up the vim color scheme
 echo '' >> ~/.vimrc
 echo '" Turn on syntax highlighting' >> ~/.vimrc
