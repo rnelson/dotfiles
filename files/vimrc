@@ -10,6 +10,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'wavded/vim-stylus'
+Plugin 'morhetz/gruvbox'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -121,3 +123,11 @@ map <silent> <F11> :set list!<CR>
 
 " Highlight the current line (vim >= 7)
 set cursorline
+
+" Turn on syntax highlighting
+set t_Co=256
+syntax enable
+syntax on
+set background=dark
+colorscheme gruvbox
+
