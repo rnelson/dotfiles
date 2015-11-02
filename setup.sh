@@ -19,15 +19,19 @@ cp files/tmux.conf ~/.tmux.conf
 # or else the  color scheme causes issues
 vim +PluginInstall +qall
 
+# Set up Nvim support
+mkdir ~/.config
+ln -s ~/.vim ~/.config/nvim
+ln -s ~/.vimrc ~/.config/nvim/init.vim
+
 # This may require a Ruby devel package
 (cd ~/.vim/bundle/command-t/ruby/command-t && ruby extconf.rb && make)
 
 # Set up the vim color scheme
 echo '' >> ~/.vimrc
 echo '" Turn on syntax highlighting' >> ~/.vimrc
-echo 'let g:solarized_termcolors=256' >> ~/.vimrc
 echo 'set t_Co=256' >> ~/.vimrc
 echo 'syntax enable' >> ~/.vimrc
 echo 'syntax on' >> ~/.vimrc
 echo 'set background=dark' >> ~/.vimrc
-echo 'colorscheme solarized' >> ~/.vimrc
+echo 'colorscheme gruvbox' >> ~/.vimrc
